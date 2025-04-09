@@ -46,6 +46,14 @@ class NebulaAgent:
                     - If the request is about finding suspicious activity of a wallet address, you will get the last 10 transactions of the address and analyze them looking for patterns that are suspicious, like wash trading, or other patterns.
                     - When a chain is provided but not it's chain id, you need to automatically resolve the chain id from the chain name.
                     - For off-topic questions, personal messages, greetings, or any requests unrelated to blockchain, use the respond_to_offtopic tool, but if the user asks about blockchain or crypto, you must always first try to get the information from the blockchain and then pivot to the respond_to_offtopic tool if you can't find the information in the blockchain.
+                    - respond_to_offtopic tool must always be used as the last resort, only use it if you can't find the information in the blockchain.
+                    - For general blockchain queries that don't refer to a specific address (like "latest transactions" or "last tx on eth mainnet"), use the chat tool with the exact query and don't ask for an address unless absolutely necessary.
+                    - When users ask about the "last tx" or "latest transaction" on a blockchain without specifying an address, provide information about the most recent transaction on that blockchain without requesting an address.
+                    - When using the chat tool for chain-specific queries, always include the chain context in your message by extracting it from the user's query.
+                    - NEVER use the chat tool with 'context: None' when the query mentions a specific blockchain - always extract and include the chain in your message.
+
+                    - the user not always use the correct language, so you need to be able to understand the user's intent and respond to the user in a way that is most likely to get the information the user is looking for, for example they might not use the word "transaction" but they might use "txn" or "tx".
+
                     """,
                 ),
                 ("placeholder", "{chat_history}"),
@@ -475,7 +483,8 @@ def main():
     print("\n")
 
     # Example query
-    query = "Can you analyze this transaction 0x4db65f81c76a596073d1eddefd592d0c3f2ef3d80f49dafee445d37e5444a3ad on Base?"
+    query = "what is the last txn on eth mainnet, explain in plain english what the txn is showing"
+    print(f"Running query: {query}")
 
     # Run the agent
     response = agent.run(query)

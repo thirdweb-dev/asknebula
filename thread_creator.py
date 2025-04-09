@@ -58,13 +58,14 @@ class ContentCreator:
                     Given a user's blockchain query:
                     1. First query the AskNebula agent to get information about the query
                     2. Analyze the response and decide what type of content is appropriate:
-                       - For complex blockchain data (like transaction details): Create a 3-tweet thread
-                       - For simple responses (like ENS resolution): Create a single post
+                       - For ALL transaction data (including simple transactions): Always create a 3-tweet thread
+                       - For complex blockchain data (like details about projects, tokens, etc.): Create a 3-tweet thread
+                       - For very simple responses (like ENS resolution): Create a single post
                        - For off-topic matters: Create a clever, funny response
                     
                     Use the most appropriate tool for each scenario:
-                    - create_twitter_thread: For complex transaction data that needs multiple tweets
-                    - create_twitter_post: For simple blockchain data that fits in one tweet
+                    - create_twitter_thread: For ANY transaction data, no matter how simple, and for complex blockchain data
+                    - create_twitter_post: Only for very simple blockchain data that has no transaction details
                     - create_clever_response: For off-topic or humorous responses
                     
                     Never make up blockchain data. Always get the data from the AskNebula agent first.
@@ -122,6 +123,8 @@ class ContentCreator:
             {blockchain_data}
             
             Requirements:
+            - The first tweet MUST include a simple plain English explanation of what this blockchain data shows
+            - For transactions, the first tweet should clearly explain what the transaction is doing in everyday language
             - NO hashtags whatsoever
             - Use bullet points (•) for better readability
             - Each bullet point should be on its own line
@@ -136,22 +139,23 @@ class ContentCreator:
             - Format numbers with commas for better readability (e.g., "1,234,567" not "1234567")
             - Use proper units (e.g., "ETH" for Ether values)
             - Keep technical details clear but concise
-            - If the information is about a transaction, you MUST include a link to the block explorer with the transaction hash in the last tweet
+            - If the information is about a transaction, you MUST include a link to the block explorer with the COMPLETE transaction hash in the last tweet
+            - DO NOT truncate the transaction hash in the block explorer URL - include the FULL hash
             - For transactions, use the appropriate block explorer: 
-              - Ethereum: https://etherscan.io/tx/<hash>
-              - Base: https://basescan.org/tx/<hash>
-              - Polygon: https://polygonscan.com/tx/<hash>
-              - Arbitrum: https://arbiscan.io/tx/<hash>
-              - Optimism: https://optimistic.etherscan.io/tx/<hash>
+              - Ethereum: https://etherscan.io/tx/0x[full transaction hash]
+              - Base: https://basescan.org/tx/0x[full transaction hash]
+              - Polygon: https://polygonscan.com/tx/0x[full transaction hash]
+              - Arbitrum: https://arbiscan.io/tx/0x[full transaction hash]
+              - Optimism: https://optimistic.etherscan.io/tx/0x[full transaction hash]
               
             Format:
             Return the thread as plain text with each tweet on a new line, separated by line breaks:
 
-            Tweet 1: [First tweet content]
+            Tweet 1: [First tweet content with plain English explanation of what the data shows]
 
             Tweet 2: [Second tweet content]
 
-            Tweet 3: [Third tweet content with block explorer link if it's a transaction]
+            Tweet 3: [Third tweet content with block explorer link using the complete transaction hash]
             """
 
             # Get the model response
@@ -186,6 +190,31 @@ class ContentCreator:
                     thread_data["tweet3"] = (
                         thread_data["tweet3"][:240] + "...\n" + explorer_url
                     )
+            # Check if the tweet already has a URL but it might be truncated
+            elif tx_hash and "https://" in thread_data["tweet3"]:
+                # Check if the full transaction hash is in the tweet
+                if tx_hash not in thread_data["tweet3"]:
+                    # Determine the blockchain
+                    blockchain = self._determine_blockchain(blockchain_data)
+                    explorer_url = self._get_explorer_url(blockchain, tx_hash)
+
+                    # Replace any truncated or incorrect block explorer URLs with the correct one
+                    import re
+
+                    explorer_patterns = [
+                        r"https://etherscan\.io/tx/0x[a-fA-F0-9]+",
+                        r"https://basescan\.org/tx/0x[a-fA-F0-9]+",
+                        r"https://polygonscan\.com/tx/0x[a-fA-F0-9]+",
+                        r"https://arbiscan\.io/tx/0x[a-fA-F0-9]+",
+                        r"https://optimistic\.etherscan\.io/tx/0x[a-fA-F0-9]+",
+                    ]
+
+                    for pattern in explorer_patterns:
+                        if re.search(pattern, thread_data["tweet3"]):
+                            thread_data["tweet3"] = re.sub(
+                                pattern, explorer_url, thread_data["tweet3"]
+                            )
+                            break
 
             if self.verbose:
                 print("Twitter thread created successfully")
@@ -212,6 +241,8 @@ class ContentCreator:
             {blockchain_data}
             
             Requirements:
+            - MUST include a plain English explanation of what this blockchain data shows
+            - For transactions, clearly explain what the transaction is doing in everyday language
             - NO hashtags or any trending topics with # - they are absolutely not allowed
             - Keep it under 280 characters
             - NO markdown formatting (no backticks, no asterisks for bold)
@@ -220,6 +251,8 @@ class ContentCreator:
             - Use proper units (e.g., "ETH" for Ether values)
             - Be concise and informative
             - Do not include any #hashtags at all - they are forbidden
+            - If it's a transaction, include a brief explanation of what's happening
+            - Use emojis to make the post more engaging
             
             Format:
             Return just the tweet content without any prefixes like "Tweet:" or "Post:"
@@ -312,9 +345,12 @@ class ContentCreator:
             2. A brief explanation of why you chose this content type
             
             Use these guidelines:
-            - 'thread': For complex blockchain data with multiple data points (like detailed transaction analysis)
-            - 'post': For simple blockchain data that fits in one tweet (like ENS resolution, simple balance checks)
+            - 'thread': For ANY transaction data (even simple single transactions), and for complex blockchain data with multiple data points
+            - 'post': For only very simple blockchain data that fits in one tweet (like ENS resolution, simple balance checks) and has NO transaction details
             - 'clever': For off-topic matters or when the response seems to be addressing a non-technical question
+            
+            IMPORTANT: If the response mentions ANY transaction hash (e.g., 0x followed by hexadecimal characters), ALWAYS choose 'thread'.
+            If words like "transaction", "tx", "transfer", or "sent" appear in the response, ALWAYS choose 'thread'.
             
             Respond in JSON format with the following structure:
             {{
@@ -756,9 +792,10 @@ def main():
         # Transaction analysis (should create a thread)
         # "Can you analyze this transaction 0x4db65f81c76a596073d1eddefd592d0c3f2ef3d80f49dafee445d37e5444a3ad on Base?",
         # Simple blockchain query (should create a post)
-        "What's the address for vitalik.eth?",
+        # "What's the address for vitalik.eth?",
         # Off-topic query (should create a clever response)
         # "What's the weather like today?",
+        "what is the last txn on eth mainnet, explain in plain english what the txn is showing",
     ]
 
     # Process each query

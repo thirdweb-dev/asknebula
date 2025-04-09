@@ -1133,3 +1133,250 @@ Content: b'{"meta":{"result_count":0}}'
 2025-04-09 15:06:27,376 - INFO - Check #2: Checking for new mentions...
 2025-04-09 15:06:27,631 - INFO - No new mentions found
 2025-04-09 15:06:27,632 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:12:53,174 - INFO - Authenticating with Twitter API...
+2025-04-09 10:12:53,175 - INFO - Twitter API authentication successful
+2025-04-09 10:12:53,175 - INFO - === Twitter Bot Starting ===
+2025-04-09 10:12:53,175 - INFO - Starting Twitter bot - monitoring for mentions
+2025-04-09 10:12:53,339 - INFO - Authenticated as @AskNebula (ID: 1896726162791112704)
+2025-04-09 10:12:53,339 - INFO - Bot will respond to @AskNebula mentions
+2025-04-09 10:12:53,339 - INFO - Bot already initialized with last mention ID: 1909966745730720191
+2025-04-09 10:12:53,339 - INFO - Check #1: Checking for new mentions...
+2025-04-09 10:12:53,587 - INFO - No new mentions found
+2025-04-09 10:12:53,587 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:14:23,593 - INFO - Check #2: Checking for new mentions...
+2025-04-09 10:14:23,861 - INFO - No new mentions found
+2025-04-09 10:14:23,861 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:15:53,867 - INFO - Check #3: Checking for new mentions...
+2025-04-09 10:15:54,141 - INFO - No new mentions found
+2025-04-09 10:15:54,141 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:17:24,145 - INFO - Check #4: Checking for new mentions...
+2025-04-09 10:17:24,414 - INFO - No new mentions found
+2025-04-09 10:17:24,415 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:18:54,398 - INFO - Check #5: Checking for new mentions...
+2025-04-09 10:18:54,684 - INFO - No new mentions found
+2025-04-09 10:18:54,684 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:20:24,686 - INFO - Check #6: Checking for new mentions...
+2025-04-09 10:20:24,973 - INFO - No new mentions found
+2025-04-09 10:20:24,973 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:21:54,978 - INFO - Check #7: Checking for new mentions...
+2025-04-09 10:21:55,246 - INFO - No new mentions found
+2025-04-09 10:21:55,247 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:23:25,249 - INFO - Check #8: Checking for new mentions...
+2025-04-09 10:23:25,510 - INFO - No new mentions found
+2025-04-09 10:23:25,510 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:24:55,514 - INFO - Check #9: Checking for new mentions...
+2025-04-09 10:24:55,773 - INFO - No new mentions found
+2025-04-09 10:24:55,773 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:26:25,778 - INFO - Check #10: Checking for new mentions...
+2025-04-09 10:26:26,056 - INFO - No new mentions found
+2025-04-09 10:26:26,057 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:27:56,062 - INFO - Check #11: Checking for new mentions...
+2025-04-09 10:27:56,320 - INFO - No new mentions found
+2025-04-09 10:27:56,321 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:29:26,326 - INFO - Check #12: Checking for new mentions...
+2025-04-09 10:29:26,634 - INFO - Found 1 new mentions
+2025-04-09 10:29:26,634 - INFO - Processing mention ID 1909991928701034564
+2025-04-09 10:29:26,634 - INFO - Processing query: what is the last txn on eth mainnet, explain in plain english what the txn is showing
+2025-04-09 10:29:28,400 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:29:29,300 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:29:37,674 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 10:29:38,373 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:29:41,694 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:29:43,052 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:29:50,872 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 10:29:51,774 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:29:53,575 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:29:54,481 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:30:05,120 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 10:30:05,657 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:30:07,304 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:30:09,433 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:30:10,118 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:30:11,309 - INFO - Result type: post
+2025-04-09 10:30:11,309 - INFO - Creating reply to mention 1909991928701034564
+2025-04-09 10:30:11,618 - INFO - Created reply to mention 1909991928701034564
+2025-04-09 10:30:13,625 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:31:43,627 - INFO - Check #13: Checking for new mentions...
+2025-04-09 10:31:43,897 - INFO - No new mentions found
+2025-04-09 10:31:43,897 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:33:13,864 - INFO - Check #14: Checking for new mentions...
+2025-04-09 10:33:14,121 - INFO - No new mentions found
+2025-04-09 10:33:14,121 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:34:44,118 - INFO - Check #15: Checking for new mentions...
+2025-04-09 10:34:44,415 - INFO - Found 1 new mentions
+2025-04-09 10:34:44,415 - INFO - Processing mention ID 1909993263232098655
+2025-04-09 10:34:44,415 - INFO - Processing query: Tell me something interesting about a recent transaction on Base.
+2025-04-09 10:34:45,390 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:34:46,473 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:34:55,228 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 10:34:55,705 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:34:57,345 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:34:58,504 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:34:59,083 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:34:59,784 - INFO - Result type: post
+2025-04-09 10:34:59,784 - INFO - Creating reply to mention 1909993263232098655
+2025-04-09 10:35:00,070 - INFO - Created reply to mention 1909993263232098655
+2025-04-09 10:35:02,072 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:36:32,077 - INFO - Check #16: Checking for new mentions...
+2025-04-09 10:36:32,367 - INFO - No new mentions found
+2025-04-09 10:36:32,367 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:38:02,371 - INFO - Check #17: Checking for new mentions...
+2025-04-09 10:38:02,635 - INFO - No new mentions found
+2025-04-09 10:38:02,636 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:39:32,639 - INFO - Check #18: Checking for new mentions...
+2025-04-09 10:39:32,898 - INFO - No new mentions found
+2025-04-09 10:39:32,899 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:41:02,902 - INFO - Check #19: Checking for new mentions...
+2025-04-09 10:41:03,193 - INFO - No new mentions found
+2025-04-09 10:41:03,194 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:42:33,197 - INFO - Check #20: Checking for new mentions...
+2025-04-09 10:42:33,459 - INFO - No new mentions found
+2025-04-09 10:42:33,459 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:44:03,464 - INFO - Check #21: Checking for new mentions...
+2025-04-09 10:44:03,775 - INFO - Found 1 new mentions
+2025-04-09 10:44:03,775 - INFO - Processing mention ID 1909995592819896381
+2025-04-09 10:44:03,775 - INFO - Processing query: Tell me something interesting about a recent transaction on Base.
+2025-04-09 10:44:05,208 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:44:06,710 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:44:17,421 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 10:44:18,112 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:44:19,167 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:44:21,181 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:44:21,836 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:44:22,679 - INFO - Result type: post
+2025-04-09 10:44:22,679 - INFO - Creating reply to mention 1909995592819896381
+2025-04-09 10:44:22,941 - INFO - Created reply to mention 1909995592819896381
+2025-04-09 10:44:24,947 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:45:54,952 - INFO - Check #22: Checking for new mentions...
+2025-04-09 10:45:55,215 - INFO - No new mentions found
+2025-04-09 10:45:55,215 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:47:25,220 - INFO - Check #23: Checking for new mentions...
+2025-04-09 10:47:25,491 - INFO - No new mentions found
+2025-04-09 10:47:25,491 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:48:55,529 - INFO - Check #24: Checking for new mentions...
+2025-04-09 10:48:55,805 - INFO - No new mentions found
+2025-04-09 10:48:55,805 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:54:45,625 - INFO - Authenticating with Twitter API...
+2025-04-09 10:54:45,625 - INFO - Twitter API authentication successful
+2025-04-09 10:54:45,626 - INFO - === Twitter Bot Starting ===
+2025-04-09 10:54:45,626 - INFO - Starting Twitter bot - monitoring for mentions
+2025-04-09 10:54:45,820 - INFO - Authenticated as @AskNebula (ID: 1896726162791112704)
+2025-04-09 10:54:45,820 - INFO - Bot will respond to @AskNebula mentions
+2025-04-09 10:54:45,820 - INFO - Bot already initialized with last mention ID: 1909995592819896381
+2025-04-09 10:54:45,820 - INFO - Check #1: Checking for new mentions...
+2025-04-09 10:54:46,087 - INFO - No new mentions found
+2025-04-09 10:54:46,087 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:56:16,093 - INFO - Check #2: Checking for new mentions...
+2025-04-09 10:56:16,386 - INFO - Found 1 new mentions
+2025-04-09 10:56:16,387 - INFO - Processing mention ID 1909998520284721415
+2025-04-09 10:56:16,387 - INFO - Processing query: what is the last txn on eth mainnet, explain in plain english what the txn is showing.
+2025-04-09 10:56:17,773 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:56:19,103 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:56:54,257 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 10:56:54,777 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:56:59,673 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:57:04,386 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:57:05,057 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:57:15,398 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:57:16,092 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 10:57:18,010 - INFO - Result type: post
+2025-04-09 10:57:18,010 - INFO - Creating reply to mention 1909998520284721415
+2025-04-09 10:57:18,287 - INFO - Created reply to mention 1909998520284721415
+2025-04-09 10:57:20,291 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 10:58:50,297 - INFO - Check #3: Checking for new mentions...
+2025-04-09 10:58:50,551 - INFO - No new mentions found
+2025-04-09 10:58:50,552 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:00:20,553 - INFO - Check #4: Checking for new mentions...
+2025-04-09 11:00:20,828 - INFO - No new mentions found
+2025-04-09 11:00:20,828 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:01:50,833 - INFO - Check #5: Checking for new mentions...
+2025-04-09 11:01:51,089 - INFO - No new mentions found
+2025-04-09 11:01:51,089 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:03:21,093 - INFO - Check #6: Checking for new mentions...
+2025-04-09 11:03:21,345 - INFO - No new mentions found
+2025-04-09 11:03:21,345 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:04:51,350 - INFO - Check #7: Checking for new mentions...
+2025-04-09 11:04:51,602 - INFO - No new mentions found
+2025-04-09 11:04:51,602 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:06:21,607 - INFO - Check #8: Checking for new mentions...
+2025-04-09 11:06:21,864 - INFO - No new mentions found
+2025-04-09 11:06:21,864 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:07:51,868 - INFO - Check #9: Checking for new mentions...
+2025-04-09 11:07:52,132 - INFO - No new mentions found
+2025-04-09 11:07:52,132 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:09:22,137 - INFO - Check #10: Checking for new mentions...
+2025-04-09 11:09:22,385 - INFO - No new mentions found
+2025-04-09 11:09:22,385 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:10:52,386 - INFO - Check #11: Checking for new mentions...
+2025-04-09 11:10:52,663 - INFO - No new mentions found
+2025-04-09 11:10:52,663 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:12:22,668 - INFO - Check #12: Checking for new mentions...
+2025-04-09 11:12:22,966 - INFO - No new mentions found
+2025-04-09 11:12:22,966 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:13:52,972 - INFO - Check #13: Checking for new mentions...
+2025-04-09 11:13:53,242 - INFO - No new mentions found
+2025-04-09 11:13:53,242 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:15:23,247 - INFO - Check #14: Checking for new mentions...
+2025-04-09 11:15:23,507 - INFO - No new mentions found
+2025-04-09 11:15:23,507 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:16:26,735 - INFO - Authenticating with Twitter API...
+2025-04-09 11:16:26,735 - INFO - Twitter API authentication successful
+2025-04-09 11:16:26,735 - INFO - === Twitter Bot Starting ===
+2025-04-09 11:16:26,735 - INFO - Starting Twitter bot - monitoring for mentions
+2025-04-09 11:16:26,898 - INFO - Authenticated as @AskNebula (ID: 1896726162791112704)
+2025-04-09 11:16:26,898 - INFO - Bot will respond to @AskNebula mentions
+2025-04-09 11:16:26,899 - INFO - Bot already initialized with last mention ID: 1909998520284721415
+2025-04-09 11:16:26,899 - INFO - Check #1: Checking for new mentions...
+2025-04-09 11:16:27,160 - INFO - No new mentions found
+2025-04-09 11:16:27,160 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:17:57,163 - INFO - Check #2: Checking for new mentions...
+2025-04-09 11:17:57,464 - INFO - Found 1 new mentions
+2025-04-09 11:17:57,464 - INFO - Processing mention ID 1910004130354987361
+2025-04-09 11:17:57,464 - INFO - Processing query: what is the last txn on eth mainnet, explain in plain english what the txn is showing.
+2025-04-09 11:17:59,140 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:00,480 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:36,666 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 11:18:37,723 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:41,046 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:48,007 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:48,589 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:53,384 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:54,035 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:18:54,894 - INFO - Result type: post
+2025-04-09 11:18:54,894 - INFO - Creating reply to mention 1910004130354987361
+2025-04-09 11:18:55,159 - INFO - Created reply to mention 1910004130354987361
+2025-04-09 11:18:57,163 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:32:28,241 - INFO - Authenticating with Twitter API...
+2025-04-09 11:32:28,241 - INFO - Twitter API authentication successful
+2025-04-09 11:32:28,241 - INFO - === Twitter Bot Starting ===
+2025-04-09 11:32:28,241 - INFO - Starting Twitter bot - monitoring for mentions
+2025-04-09 11:32:28,448 - INFO - Authenticated as @AskNebula (ID: 1896726162791112704)
+2025-04-09 11:32:28,449 - INFO - Bot will respond to @AskNebula mentions
+2025-04-09 11:32:28,449 - INFO - Bot already initialized with last mention ID: 1910004130354987361
+2025-04-09 11:32:28,449 - INFO - Check #1: Checking for new mentions...
+2025-04-09 11:32:28,707 - INFO - No new mentions found
+2025-04-09 11:32:28,707 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:33:58,712 - INFO - Check #2: Checking for new mentions...
+2025-04-09 11:33:59,013 - INFO - Found 1 new mentions
+2025-04-09 11:33:59,014 - INFO - Processing mention ID 1910008054378095097
+2025-04-09 11:33:59,014 - INFO - Processing query: what is the last txn on eth mainnet, explain in plain english what the txn is showing.
+2025-04-09 11:34:00,086 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:01,174 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:30,987 - INFO - HTTP Request: POST https://nebula-api.thirdweb.com/chat "HTTP/1.1 200 OK"
+2025-04-09 11:34:31,695 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:36,734 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:40,480 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:41,279 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:47,678 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:48,417 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-04-09 11:34:53,311 - INFO - Result type: thread
+2025-04-09 11:34:53,311 - INFO - Creating thread in response to mention 1910008054378095097
+2025-04-09 11:34:53,312 - INFO - Creating Twitter thread...
+2025-04-09 11:34:53,570 - INFO - Created thread tweet 1 with ID 1910008526052733098
+2025-04-09 11:34:53,806 - INFO - Created thread tweet 2 with ID 1910008527071961113
+2025-04-09 11:34:54,119 - INFO - Created thread tweet 3 with ID 1910008528078581788
+2025-04-09 11:34:54,119 - INFO - Created thread in response to mention 1910008054378095097
+2025-04-09 11:34:56,124 - INFO - Waiting for next check... (90 seconds)
+2025-04-09 11:36:26,129 - INFO - Check #3: Checking for new mentions...
+2025-04-09 11:36:26,382 - INFO - No new mentions found
+2025-04-09 11:36:26,382 - INFO - Waiting for next check... (90 seconds)
