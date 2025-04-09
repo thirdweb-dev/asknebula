@@ -1,0 +1,13 @@
+[project]
+name = "mvp-ask-nebula"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=0.3.23",
+    "langchain-openai>=0.3.12",
+    "thirdweb-ai[langchain]>=0.1.10",
+    "tweepy>=4.15.0",
+]

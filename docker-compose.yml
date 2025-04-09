@@ -1,0 +1,24 @@
+services:
+  asknebula:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./.env:/app/.env:ro # Mount the .env file from host to container
+      - ./last_mention.json:/app/last_mention.json # Mount the last mention file to persist state
+      - ./twitter_bot.log:/app/twitter_bot.log # Mount the log file to view logs on host
+    environment:
+      - TZ=UTC # Set timezone
+    # Use healthcheck to ensure the service is running properly
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import os; exit(0 if os.path.exists('twitter_bot.log') else 1)",
+        ]
+      interval: 1m
+      timeout: 10s
+      retries: 3

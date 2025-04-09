@@ -1,0 +1,26 @@
+# Version control
+.git
+.gitignore
+
+# Python virtual environments
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+
+# Logs
+*.log
+
+# Environment files (will be mounted as volumes)
+.env
+
+# Miscellaneous
+.DS_Store
+README*.md
+.python-version
+Dockerfile
+docker-compose.yml
+.dockerignore 
