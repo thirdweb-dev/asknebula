@@ -7,9 +7,13 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 from langchain.tools import tool
 from pydantic import BaseModel, Field
+from dotenv import load_dotenv
 
 # Import NebulaAgent from askNebula.py
 from askNebula import NebulaAgent
+
+# Load ENV
+load_dotenv()
 
 
 class TwitterContent(BaseModel):
